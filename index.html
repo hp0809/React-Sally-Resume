@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is a resume for Sally Student.">
+    <title>Sally Student Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+      function App(props) {
+        return (
+            <div>
+              {props.children}
+            </div>
+          );
+      }
+      ReactDOM.render(
+        <App>
+            <header>
+                <h1> Sally Student Resume</h1>
+                <h2>A view of my career so far</h2>
+            </header>
+            <main>
+            My name is Sally. I am from X city, Z state. I graduated XYZ university with a bachelor's degree in YY studies. I am a new, but very eager and committed full stack programmer.
+            </main>
+            <section className="Education">
+                <h3>Education</h3>
+                    <p>XYZ University -YY Studies (cum laude)</p>
+                    <p>2010 - 2014</p>
+                    <ul>
+                        <li>GPA - 3.92 </li>
+                        <li>President of the ABC Club </li>
+                        <li>Participated an educational exchange with ZYX University in XX</li>
+                    </ul>
+            </section>
+            <section className="Employment">
+                <h3>Employment History</h3>
+                <p>Somewhere Inc.- Front End Web Developer</p>
+                <p>Jan 2018 - Mar 2019</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a congue risus, et sagittis ipsum. Sed eu viverra nulla. Ut placerat ullamcorper dictum. Quisque vel venenatis diam. .</p>
+                <ul>
+                    <li>Developed and implemented new software features </li>
+                    <li>Maintained and improved the performance of existing software </li>
+                    <li>Tested and maintained software products to ensure strong functionality</li>
+                </ul>
+                <p>Language Jobs Group - In-house Translator/Localizor</p>
+                <p>Jan 2014 - Jan 2018</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a congue risus, et sagittis ipsum. Sed eu viverra nulla. Ut placerat ullamcorper dictum. Quisque vel venenatis diam. </p>
+                <ul>
+                    <li>Translated and localized content in English/Japanese</li>
+                    <li>Reviewed marketing content</li>
+                    <li>Gathered user intelligence by asking questions about software usage</li>
+                </ul>
+            </section>
+            <div className= 'address'>
+                <h3>Contact:</h3>
+                <p>Sally Student </p>
+                <img src="sally.jpg" />
+                <p><a href="webmaster@example.com"> Send Sally a message</a></p>
+                <p> Telephone: 01-123-4567</p>
+            </div>
+        </App>,
+        document.querySelector('#application-root')
+        );
+    </script>
+      
+ </body>
+</html>
